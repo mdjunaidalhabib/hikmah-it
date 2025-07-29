@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="bg-fuchsia-50 dark:bg-gray-900 mt-15">
+    <section className="bg-fuchsia-50 dark:bg-gray-900 mt-14">
       <div className=" text-center px-4 md:px-10 py-10 max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
           আপনার ব্যবসার জন্য আধুনিক ই-কমার্স ওয়েবসাইট তৈরি করুন

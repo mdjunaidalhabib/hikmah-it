@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="bg-fuchsia-50 dark:bg-gray-900 mt-15">
+    <section className="bg-fuchsia-50 dark:bg-gray-900 mt-14">
       <div className=" text-center px-4 md:px-10 py-10 max-w-7xl mx-auto">
         <FaIdCard className="mx-auto text-6xl mb-6 text-rose-500" />
         <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">

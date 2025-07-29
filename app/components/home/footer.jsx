@@ -37,37 +37,37 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
               <FaTools />
-              <Link href="/services">সার্ভিসসমূহ</Link>
+              <Link href="/">সার্ভিসসমূহ</Link>
             </li>
             <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
               <FaInfoCircle />
-              <Link href="/about" className="">
+              <Link href="/" className="">
                 আমাদের সম্পর্কে
               </Link>
             </li>
             <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
               <FaPhoneAlt />
-              <Link href="/contact">যোগাযোগ করুন</Link>
+              <Link href="/">যোগাযোগ করুন</Link>
             </li>
             <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
               <FaProjectDiagram />
-              <Link href="/projects">প্রকল্পসমূহ</Link>
+              <Link href="/">প্রকল্পসমূহ</Link>
             </li>
             <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
               <FaClipboardCheck />
-              <Link href="/order-service">সার্ভিস নিন</Link>
+              <Link href="/">সার্ভিস নিন</Link>
             </li>
             <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
               <FaUsers />
-              <Link href="/team">টিম মেম্বার</Link>
+              <Link href="/">টিম মেম্বার</Link>
             </li>
             <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
               <FaFileContract />
-              <Link href="/terms">টার্মস ও কন্ডিশন</Link>
+              <Link href="/">টার্মস ও কন্ডিশন</Link>
             </li>
             <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
               <FaUndoAlt />
-              <Link href="/return-policy">রিটার্ন পলিসি</Link>
+              <Link href="/">রিটার্ন পলিসি</Link>
             </li>
           </ul>
         </div>
@@ -78,43 +78,41 @@ export default function Footer() {
           <ul className="space-y-2">
             <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
               <FaLaptopCode />
-              <Link href="/services/web-design">
+              <Link href="/web-development">
                 কাস্টম ওয়েব ডিজাইন ও ডেভেলপমেন্ট
               </Link>
             </li>
             <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
               <FaSchool />
-              <Link href="/services/school-management">
-                স্কুল ম্যানেজমেন্ট সিস্টেম
-              </Link>
+              <Link href="/school-management">স্কুল ম্যানেজমেন্ট সিস্টেম</Link>
             </li>
             <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
               <FaShoppingCart />
-              <Link href="/services/ecommerce">ই-কমার্স ওয়েবসাইট</Link>
+              <Link href="/ecommerce">ই-কমার্স ওয়েবসাইট</Link>
             </li>
             <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
               <FaIdCard />
-              <Link href="/services/portfolio">পোর্টফোলিও ওয়েবসাইট</Link>
+              <Link href="/portfolio">পোর্টফোলিও ওয়েবসাইট</Link>
             </li>
             <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
               <FaPaintBrush />
-              <Link href="/services/ui-ux">ইউআই ইউএক্স ডিজাইন</Link>
+              <Link href="/ui-ux">ইউআই ইউএক্স ডিজাইন</Link>
             </li>
             <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
               <FaServer />
-              <Link href="/services/domain-hosting">ডোমেইন ও হোস্টিং</Link>
+              <Link href="/domain-hosting">ডোমেইন ও হোস্টিং</Link>
             </li>
             <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
               <FaPenNib />
-              <Link href="/services/logo-design">লোগো ডিজাইন</Link>
+              <Link href="/logo-design">লোগো ডিজাইন</Link>
             </li>
             <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
               <FaAddressCard />
-              <Link href="/services/id-card">আইডি কার্ড তৈরি</Link>
+              <Link href="/id-card">আইডি কার্ড তৈরি</Link>
             </li>
             <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
               <FaVideo />
-              <Link href="/services/video-editing">ভিডিও এডিটিং</Link>
+              <Link href="/video-editing">ভিডিও এডিটিং</Link>
             </li>
           </ul>
         </div>
@@ -125,16 +123,11 @@ export default function Footer() {
             <h2 className="text-xl font-semibold mb-4">যোগাযোগ</h2>
             <ul className="space-y-2">
               <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
-                <FaPhoneAlt /> ফোন:{" "}
-                <a href="tel:01788563988">
-                  ০১৭৮৮-৫৬৩৯৮৮
-                </a>
+                <FaPhoneAlt /> ফোন: <a href="tel:01788563988">০১৭৮৮-৫৬৩৯৮৮</a>
               </li>
               <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
                 <FaEnvelope /> ইমেইল:{" "}
-                <a
-                  href="mailto:junaidalhabib20@gmail.com"
-                >
+                <a href="mailto:junaidalhabib20@gmail.com">
                   junaidalhabib20@gmail.com
                 </a>
               </li>

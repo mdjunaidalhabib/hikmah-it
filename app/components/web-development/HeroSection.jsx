@@ -3,7 +3,7 @@ import { FaCode, FaMobileAlt, FaGlobe } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <section className="bg-fuchsia-50 dark:bg-gray-900 mt-15">
+    <section className="bg-fuchsia-50 dark:bg-gray-900 mt-13">
       <div className=" text-center px-4 md:px-10 py-10 max-w-7xl mx-auto">
         <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold text-gray-900 dark:text-white text-center -mt-4 p-2">
           আপনার স্বপ্নের ওয়েবসাইট তৈরি হোক আমাদের সাথে!
