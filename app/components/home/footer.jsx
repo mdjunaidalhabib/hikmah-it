@@ -127,12 +127,10 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
                 <FaEnvelope /> ইমেইল:{" "}
-                <a href="mailto:junaidalhabib20@gmail.com">
-                  junaidalhabib20@gmail.com
-                </a>
+                <a href="mailto:hikmahitcenter@gmail.com">@gmail.com</a>
               </li>
               <li className="flex items-center gap-2">
-                <FaMapMarkerAlt /> ঠিকানা: নারায়ণগঞ্জ-১৪২১, ঢাকা, বাংলাদেশ
+                <FaMapMarkerAlt /> ঠিকানা: দেওয়ানগঞ্জ, জামালপুর, বাংলাদেশ
               </li>
             </ul>
           </div>
