@@ -1,8 +1,8 @@
 import React from "react";
-import HeroSection from "../../components/Logo-design/HeroSection";
-import WhyChooseUs from "../../components/Logo-design/WhyChooseUs";
-import Packages from "../../components/Logo-design/Packages";
-import ContactSection from "../../components/Logo-design/ContactSection";
+import HeroSection from "../components/Logo-design/HeroSection";
+import WhyChooseUs from "../components/Logo-design/WhyChooseUs";
+import Packages from "../components/Logo-design/Packages";
+import ContactSection from "../components/Logo-design/ContactSection";
 
 export default function LogoDesignService() {
   return (

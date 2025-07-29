@@ -19,7 +19,7 @@ const services = [
     title: "Custom Web Design and Development",
     description:
       "কাস্টমাইজড ওয়েবসাইট ডিজাইন, যা আপনার ব্যবসার জন্য সম্পূর্ণ উপযোগী ও আকর্ষণীয়।",
-    link: "/services/web-development",
+    link: "/web-development",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const services = [
     title: "School Management System",
     description:
       "স্কুল ব্যবস্থাপনা সফটওয়্যার, যা ছাত্র, শিক্ষক, ক্লাস, অ্যাডমিশন সবকিছু সহজে নিয়ন্ত্রণ করে।",
-    link: "/services/school-management",
+    link: "/school-management",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const services = [
     title: "E-commerce Website",
     description:
       "অনলাইন শপিংয়ের জন্য আধুনিক ই-কমার্স ওয়েবসাইট ডিজাইন এবং ডেভেলপমেন্ট।",
-    link: "/services/ecommerce",
+    link: "/ecommerce",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const services = [
     title: "Portfolio Website",
     description:
       "ব্যক্তিগত বা পেশাদারী কাজ প্রদর্শনের জন্য পোর্টফোলিও ওয়েবসাইট।",
-    link: "/services/portfolio",
+    link: "/portfolio",
   },
   {
     id: 5,
@@ -51,21 +51,21 @@ const services = [
     title: "UI/UX Design",
     description:
       "ব্যবহারকারীর জন্য সহজ ও মনোগ্রাহী ইউজার ইন্টারফেস এবং অভিজ্ঞতা ডিজাইন।",
-    link: "/services/ui-ux",
+    link: "/ui-ux",
   },
   {
     id: 6,
     icon: <FaServer className="text-gray-600" />,
     title: "Domain and Hosting",
     description: "ডোমেইন নিবন্ধন এবং দ্রুত, নিরাপদ হোস্টিং সার্ভিস প্রদান।",
-    link: "/services/domain-hosting",
+    link: "/domain-hosting",
   },
   {
     id: 7,
     icon: <FaPalette className="text-orange-500" />,
     title: "Logo Design",
     description: "তোমার ব্র্যান্ডের জন্য ইউনিক এবং প্রফেশনাল লোগো ডিজাইন।",
-    link: "/services/logo-design",
+    link: "logo-design",
   },
   {
     id: 8,
@@ -73,14 +73,14 @@ const services = [
     title: "ID Card Making",
     description:
       "মাদ্রাসা ও অন্যান্য প্রতিষ্ঠানের জন্য আইডি কার্ড ডিজাইন ও তৈরি।",
-    link: "/services/id-card",
+    link: "/id-card",
   },
   {
     id: 9,
     icon: <FaVideo className="text-red-500" />,
     title: "Video Editing",
     description: "ভিডিও এডিটিং সার্ভিস, যাতে তোমার কনটেন্ট আরো আকর্ষণীয় হয়।",
-    link: "/services/video-editing",
+    link: "/video-editing",
   },
 ];
 

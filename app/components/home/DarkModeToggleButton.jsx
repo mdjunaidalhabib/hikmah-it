@@ -6,14 +6,12 @@ export default function DarkModeToggle() {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    if (
-      localStorage.getItem("theme") === "dark" ||
-      (!localStorage.getItem("theme") &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
+    const theme = localStorage.getItem("theme");
+    if (theme === "dark") {
       document.documentElement.classList.add("dark");
       setIsDark(true);
     } else {
+      // ডিফল্ট লাইট মোড হবে যদি localStorage এ কিছু না থাকে বা 'light' থাকে
       document.documentElement.classList.remove("dark");
       setIsDark(false);
     }
@@ -23,11 +21,11 @@ export default function DarkModeToggle() {
     const html = document.documentElement;
     if (html.classList.contains("dark")) {
       html.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+      localStorage.setItem("theme", "light");  // localStorage-এ সেভ করলাম light
       setIsDark(false);
     } else {
       html.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+      localStorage.setItem("theme", "dark");   // localStorage-এ সেভ করলাম dark
       setIsDark(true);
     }
   };
