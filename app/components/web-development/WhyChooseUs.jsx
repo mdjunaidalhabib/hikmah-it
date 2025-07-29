@@ -37,18 +37,20 @@ export default function WhyChooseUs() {
 
   return (
     <section className="bg-fuchsia-50 dark:bg-gray-900">
-      <div className="px-4 md:px-10 py-10 max-w-7xl mx-auto">
+      <div className=" text-center px-4 md:px-10 py-10 max-w-7xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-3"
+          className="text-xl sm:text-4xl md:text-4xl font-bold text-gray-900 dark:text-white text-center -mt-4 p-2"
         >
           কেন আমাদের{" "}
-          <span className="text-blue-600">Custom Web Design & Development</span>{" "}
+          <span className="text-blue-600 text-1xl">
+            Custom Web Design & Development
+          </span>{" "}
           বেছে নেবেন?
         </motion.h2>
-        <p className="max-w-3xl mx-auto  mb-6 text-gray-600 dark:text-gray-300">
+        <p className="max-w-1xl mx-auto  mb-6 text-gray-600 dark:text-gray-300">
           আমরা শুধু ওয়েবসাইট বানাই না, বরং ব্যবসাকে অনলাইনে সফল করতে পূর্ণাঙ্গ
           ওয়েব সলিউশন দিয়ে থাকি।
         </p>

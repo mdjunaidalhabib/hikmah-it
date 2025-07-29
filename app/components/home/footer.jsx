@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SocialIcons from "./SocialIcons";
 import {
   FaHome,
@@ -27,36 +28,46 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white py-4 px-4 md:px-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-6">
         {/* Quick Menu */}
-
         <div>
           <h2 className="text-xl font-semibold mb-4">দ্রুত মেনু</h2>
           <ul className="space-y-2">
-            <li className="flex items-center gap-2">
-              <FaHome /> হোম
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaHome />
+              <Link href="/">হোম</Link>
             </li>
-            <li className="flex items-center gap-2">
-              <FaTools /> সার্ভিসসমূহ
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaTools />
+              <Link href="/services">সার্ভিসসমূহ</Link>
             </li>
-            <li className="flex items-center gap-2">
-              <FaInfoCircle /> আমাদের সম্পর্কে
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaInfoCircle />
+              <Link href="/about" className="">
+                আমাদের সম্পর্কে
+              </Link>
             </li>
-            <li className="flex items-center gap-2">
-              <FaPhoneAlt /> যোগাযোগ করুন
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaPhoneAlt />
+              <Link href="/contact">যোগাযোগ করুন</Link>
             </li>
-            <li className="flex items-center gap-2">
-              <FaProjectDiagram /> প্রকল্পসমূহ
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaProjectDiagram />
+              <Link href="/projects">প্রকল্পসমূহ</Link>
             </li>
-            <li className="flex items-center gap-2">
-              <FaClipboardCheck /> সার্ভিস নিন
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaClipboardCheck />
+              <Link href="/order-service">সার্ভিস নিন</Link>
             </li>
-            <li className="flex items-center gap-2">
-              <FaUsers /> টিম মেম্বার
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaUsers />
+              <Link href="/team">টিম মেম্বার</Link>
             </li>
-            <li className="flex items-center gap-2">
-              <FaFileContract /> টার্মস ও কন্ডিশন
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaFileContract />
+              <Link href="/terms">টার্মস ও কন্ডিশন</Link>
             </li>
-            <li className="flex items-center gap-2">
-              <FaUndoAlt /> রিটার্ন পলিসি
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaUndoAlt />
+              <Link href="/return-policy">রিটার্ন পলিসি</Link>
             </li>
           </ul>
         </div>
@@ -65,32 +76,45 @@ export default function Footer() {
         <div>
           <h2 className="text-xl font-semibold mb-4">আমাদের সেবা</h2>
           <ul className="space-y-2">
-            <li className="flex items-center gap-2">
-              <FaLaptopCode /> কাস্টম ওয়েব ডিজাইন ও ডেভেলপমেন্ট
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaLaptopCode />
+              <Link href="/services/web-design">
+                কাস্টম ওয়েব ডিজাইন ও ডেভেলপমেন্ট
+              </Link>
             </li>
-            <li className="flex items-center gap-2">
-              <FaSchool /> স্কুল ম্যানেজমেন্ট সিস্টেম
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaSchool />
+              <Link href="/services/school-management">
+                স্কুল ম্যানেজমেন্ট সিস্টেম
+              </Link>
             </li>
-            <li className="flex items-center gap-2">
-              <FaShoppingCart /> ই-কমার্স ওয়েবসাইট
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaShoppingCart />
+              <Link href="/services/ecommerce">ই-কমার্স ওয়েবসাইট</Link>
             </li>
-            <li className="flex items-center gap-2">
-              <FaIdCard /> পোর্টফোলিও ওয়েবসাইট
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaIdCard />
+              <Link href="/services/portfolio">পোর্টফোলিও ওয়েবসাইট</Link>
             </li>
-            <li className="flex items-center gap-2">
-              <FaPaintBrush /> ইউআই ইউএক্স ডিজাইন
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaPaintBrush />
+              <Link href="/services/ui-ux">ইউআই ইউএক্স ডিজাইন</Link>
             </li>
-            <li className="flex items-center gap-2">
-              <FaServer /> ডোমেইন ও হোস্টিং
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaServer />
+              <Link href="/services/domain-hosting">ডোমেইন ও হোস্টিং</Link>
             </li>
-            <li className="flex items-center gap-2">
-              <FaPenNib /> লোগো ডিজাইন
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaPenNib />
+              <Link href="/services/logo-design">লোগো ডিজাইন</Link>
             </li>
-            <li className="flex items-center gap-2">
-              <FaAddressCard /> আইডি কার্ড তৈরি
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaAddressCard />
+              <Link href="/services/id-card">আইডি কার্ড তৈরি</Link>
             </li>
-            <li className="flex items-center gap-2">
-              <FaVideo /> ভিডিও এডিটিং
+            <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+              <FaVideo />
+              <Link href="/services/video-editing">ভিডিও এডিটিং</Link>
             </li>
           </ul>
         </div>
@@ -100,11 +124,19 @@ export default function Footer() {
           <div>
             <h2 className="text-xl font-semibold mb-4">যোগাযোগ</h2>
             <ul className="space-y-2">
-              <li className="flex items-center gap-2">
-                <FaPhoneAlt /> ফোন: +৮৮০১৭৮৮-৫৬৩৯৮৮
+              <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+                <FaPhoneAlt /> ফোন:{" "}
+                <a href="tel:01788563988">
+                  ০১৭৮৮-৫৬৩৯৮৮
+                </a>
               </li>
-              <li className="flex items-center gap-2">
-                <FaEnvelope /> ইমেইল: junaidalhabib20@gmail.com
+              <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
+                <FaEnvelope /> ইমেইল:{" "}
+                <a
+                  href="mailto:junaidalhabib20@gmail.com"
+                >
+                  junaidalhabib20@gmail.com
+                </a>
               </li>
               <li className="flex items-center gap-2">
                 <FaMapMarkerAlt /> ঠিকানা: নারায়ণগঞ্জ-১৪২১, ঢাকা, বাংলাদেশ
@@ -121,7 +153,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
       <hr className="border-t-1 border-gray-600" />
+
       {/* Copyright */}
       <div className="text-center text-sm text-gray-400 mt-4">
         © ২০২৫ Hikmah IT. সর্বস্বত্ব সংরক্ষিত।
