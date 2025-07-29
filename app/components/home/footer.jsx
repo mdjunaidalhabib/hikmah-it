@@ -127,7 +127,9 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2 hover:scale-101 hover:text-yellow-300">
                 <FaEnvelope /> ইমেইল:{" "}
-                <a href="mailto:hikmahitcenter@gmail.com">@gmail.com</a>
+                <a href="mailto:hikmahitcenter@gmail.com">
+                  hikmahitcenter@gmail.com
+                </a>
               </li>
               <li className="flex items-center gap-2">
                 <FaMapMarkerAlt /> ঠিকানা: দেওয়ানগঞ্জ, জামালপুর, বাংলাদেশ
