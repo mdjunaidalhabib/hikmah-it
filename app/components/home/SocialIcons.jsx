@@ -10,19 +10,19 @@ import Link from "next/link";
 
 const socialLinks = [
   {
-    href: "tel:+8801788-563988", // 👈 এখানে নিজের ফোন নম্বর বসাও
+    href: "tel:01788-563988", // 👈 এখানে নিজের ফোন নম্বর বসাও
     icon: <FaPhone className="text-green-800 w-5 h-5" />,
     label: "Call Now",
     bg: "bg-green-50 border-green-300",
   },
   {
-    href: "https://wa.me/8801788-563988",
+    href: "https://wa.me/01788-563988",
     icon: <FaWhatsapp className="text-green-600 w-5 h-5" />,
     label: "WhatsApp",
     bg: "bg-green-100 border-green-300",
   },
   {
-    href: "https://facebook.com/mdjunaidalhabib2006",
+    href: "https://facebook.com/hikmahit",
     icon: <FaFacebook className="text-blue-600 w-5 h-5" />,
     label: "Facebook",
     bg: "bg-blue-100 border-blue-300",
