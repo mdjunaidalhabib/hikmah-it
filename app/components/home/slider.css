@@ -1,0 +1,19 @@
+/* Smooth transition for Swiper slides */
+.swiper-slide {
+  transition: all 0.4s ease;
+}
+
+/* Optional: Scale up active slide slightly */
+.swiper-slide-active {
+  transform: scale(1.02);
+}
+
+/* Optional: Pagination style */
+.swiper-pagination-bullet {
+  background-color: #f97316;
+  opacity: 0.3;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
