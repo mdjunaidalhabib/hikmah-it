@@ -16,7 +16,7 @@ export default function HeroSection() {
             আপনার প্রয়োজন বুঝে আমরা তৈরি করি সহজ, আধুনিক ও বিশ্বস্ত ডিজিটাল
             সমাধান। যেটা শুধু কাজের না, আপনার বিশ্বাসেরও যোগ্য।
           </p>
-          <Link href="/contact">
+          <Link href="/">
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl text-lg transition-all duration-200 shadow-md">
               এখনই যোগাযোগ করুন
             </button>

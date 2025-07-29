@@ -16,19 +16,19 @@ const socialLinks = [
     bg: "bg-green-50 border-green-300",
   },
   {
-    href: "https://wa.me/01788-563988",
+    href: "https://wa.me/+8801788-563988",
     icon: <FaWhatsapp className="text-green-600 w-5 h-5" />,
     label: "WhatsApp",
     bg: "bg-green-100 border-green-300",
   },
   {
-    href: "https://facebook.com/hikmahit",
+    href: "https://web.facebook.com/profile.php?id=61576316192170&rdid=C9yaZAxSQj0vTZBO#",
     icon: <FaFacebook className="text-blue-600 w-5 h-5" />,
     label: "Facebook",
     bg: "bg-blue-100 border-blue-300",
   },
   {
-    href: "https://youtube.com/@yourchannel",
+    href: "https://www.youtube.com/@hikmahit",
     icon: <FaYoutube className="text-red-600 w-5 h-5" />,
     label: "YouTube",
     bg: "bg-red-100 border-red-300",
