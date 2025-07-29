@@ -19,7 +19,7 @@ export default function WhyChooseUs() {
       icon: <FaPaintBrush className="text-pink-500" />,
       title: "Custom UI/UX",
       description:
-        "তোমার ব্যবসার ধরন অনুযায়ী একদম কাস্টমাইজড UI/UX ডিজাইন করে থাকি।",
+        "আপনার ব্যবসার ধরন অনুযায়ী একদম কাস্টমাইজড UI/UX ডিজাইন করে থাকি।",
     },
     {
       icon: <FaServer className="text-green-500" />,
@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
       icon: <FaUserCircle className="text-purple-500" />,
       title: "Dedicated Support",
       description:
-        "প্রজেক্ট শেষ হওয়ার পরেও আমরা তোমাকে টেকনিক্যাল সাপোর্ট দিয়ে থাকি।",
+        "প্রজেক্ট শেষ হওয়ার পরেও আমরা আপনাকে টেকনিক্যাল সাপোর্ট দিয়ে থাকি।",
     },
   ];
 
