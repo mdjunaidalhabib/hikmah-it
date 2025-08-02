@@ -24,7 +24,7 @@ const HeroSection = () => {
             এখনই যোগাযোগ করুন
           </Link>
           <Link
-            href="/details"
+            href="/designs"
             className="border border-orange-500 text-orange-500 px-6 py-2 rounded hover:bg-orange-100 transition"
           >
             ডিজাইনগুলো দেখুন
