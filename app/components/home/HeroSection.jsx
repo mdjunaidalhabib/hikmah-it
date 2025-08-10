@@ -10,7 +10,8 @@ export default function HeroSection() {
         <div className="flex-1 text-center lg:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 ">
             আপনার ডিজিটাল স্বপ্নকে বাস্তবে রূপ দিন
-            <span className="text-pink-600"> Hikmah IT</span> -র সঙ্গে
+            <span className="text-orange-600 font-serif"> Hikmah IT</span> -র
+            সঙ্গে
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-6">
             আপনার প্রয়োজন বুঝে আমরা তৈরি করি সহজ, আধুনিক ও বিশ্বস্ত ডিজিটাল

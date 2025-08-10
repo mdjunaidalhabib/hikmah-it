@@ -1,193 +1,129 @@
 "use client";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import React, { useState, useEffect, useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { usePathname } from "next/navigation";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import DarkModeToggleButton from "./DarkModeToggleButton";
 
 const navLinks = [
-  { title: "Home", path: "#home", bgColor: "#f97316" },
-  { title: "Services", path: "#services", bgColor: "#fc9414" },
-  { title: "Contact", path: "#contact", bgColor: "#f97316" },
-  { title: "Team", path: "#team", bgColor: "#f97316" },
+  { title: "Home", path: "/" },
+  { title: "Services", path: "/services" },
+  { title: "Contact", path: "/contact" },
 ];
 
 const Navbar = () => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState(null);
-  const [bgColor, setBgColor] = useState("#f97316");
-
-  const menuRef = useRef(null);
   const pathname = usePathname();
-  const router = useRouter();
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
-  const handleSmoothScroll = (e, targetId, color) => {
-    e.preventDefault();
-    setNavbarOpen(false);
+  const isActive = (path) => pathname === path;
 
-    if (pathname !== "/") {
-      router.push("/");
-
-      setTimeout(() => {
-        const section = document.querySelector(targetId);
-        if (section) {
-          section.scrollIntoView({ behavior: "smooth" });
-          setActiveSection(targetId);
-          setBgColor(color);
-        }
-      }, 100);
-    } else {
-      const section = document.querySelector(targetId);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-        setActiveSection(targetId);
-        setBgColor(color);
-      }
-    }
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (pathname !== "/") {
-        setActiveSection(null);
-        return;
-      }
-
-      let found = false;
-      navLinks.forEach((link) => {
-        if (!link.path.startsWith("#")) return;
-        const section = document.querySelector(link.path);
-        if (section) {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-          if (
-            window.scrollY >= sectionTop - 100 &&
-            window.scrollY < sectionTop + sectionHeight
-          ) {
-            setActiveSection(link.path);
-            setBgColor(link.bgColor);
-            found = true;
-          }
-        }
-      });
-
-      if (!found) {
-        setActiveSection(null);
-        setBgColor("#6b46c1");
-      }
-    };
-
-    if (pathname === "/") {
-      window.addEventListener("scroll", handleScroll);
-    }
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [pathname]);
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setNavbarOpen(false);
-      }
-    };
-
-    if (navbarOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [navbarOpen]);
+  const toggleNavbar = () => setNavbarOpen(!navbarOpen);
 
   return (
-    <motion.nav
-      animate={{ backgroundColor: bgColor }}
-      transition={{ duration: 1.2, ease: "easeInOut" }}
-      className="fixed top-0 left-0 right-0 z-50 bg-opacity-90 w-full"
-    >
-      <div className="flex items-center justify-between px-4 md:px-10 py-2 max-w-7xl mx-auto">
+    <nav className="fixed top-0 left-0 right-0 bg-violet-600 z-50 shadow-md">
+      <div className="max-w-7xl mx-auto flex items-center justify-between p-2">
+        {/* Logo and Title */}
         <Link
           href="/"
-          className="flex items-center text-white font-semibold text-2xl gap-2"
+          className="flex items-center text-white font-bold text-2xl"
         >
-          <img src="/logo.png" alt="logo" className="w-8 h-8 rounded-full" />
-          <h1 className="px-0">HIKMAH IT</h1>
+          <img
+            src="/logo.png"
+            alt="logo"
+            className="w-8 h-8 rounded-full mr-2"
+          />
+          HIKMAH IT
         </Link>
 
-        <div className="hidden md:flex items-center space-x-8">
-          {navLinks.map((link, index) => (
-            <a
-              key={index}
+        {/* Desktop Menu centered vertically */}
+        <div className="hidden md:flex space-x-8 items-center">
+          {navLinks.map((link, idx) => (
+            <Link
+              key={idx}
               href={link.path}
-              onClick={(e) => handleSmoothScroll(e, link.path, link.bgColor)}
-              className={`text-white p-2 transition-all duration-500 ease-in-out relative ${
-                pathname === "/" && activeSection === link.path
-                  ? "text-yellow-300 font-bold"
+              className={`text-white font-semibold  hover:text-yellow-300 transition px-3 py-1 rounded ${
+                isActive(link.path)
+                  ? "bg-yellow-400 text-black font-semibold"
                   : ""
               }`}
+              onClick={() => setNavbarOpen(false)}
             >
               {link.title}
-              <span
-                className={`absolute left-0 bottom-0 h-[3px] bg-yellow-300 transition-all duration-1000 ease-in-out ${
-                  pathname === "/" && activeSection === link.path
-                    ? "w-full"
-                    : "w-0"
-                }`}
-              ></span>
-            </a>
+            </Link>
           ))}
         </div>
 
-        <div className="flex items-center space-x-4 md:ml-6">
+        {/* Right side: Dark Mode Toggle + Hamburger */}
+        <div className="flex items-center space-x-4">
           <DarkModeToggleButton />
+
+          {/* Hamburger Button */}
           <button
-            onClick={() => setNavbarOpen(!navbarOpen)}
-            className="md:hidden p-1 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+            onClick={toggleNavbar}
+            className="md:hidden relative w-8 h-8 flex flex-col justify-center items-center gap-[5px] z-50"
+            aria-label="Toggle menu"
           >
-            {navbarOpen ? (
-              <FaTimes className="h-5 w-5" />
-            ) : (
-              <FaBars className="h-5 w-5" />
-            )}
+            <motion.span
+              animate={navbarOpen ? { rotate: 45, y: 11 } : { rotate: 0, y: 0 }}
+              className="block h-1 w-6 bg-white rounded"
+              style={{ originX: 0.5, originY: 0.5 }}
+              transition={{ duration: 0.3 }}
+            />
+            <motion.span
+              animate={navbarOpen ? { opacity: 0 } : { opacity: 1 }}
+              className="block h-1 w-6 bg-white rounded"
+              transition={{ duration: 0.3 }}
+            />
+            <motion.span
+              animate={
+                navbarOpen ? { rotate: -45, y: -7 } : { rotate: 0, y: 0 }
+              }
+              className="block h-1 w-6 bg-white rounded"
+              style={{ originX: 0.5, originY: 0.5 }}
+              transition={{ duration: 0.3 }}
+            />
           </button>
         </div>
       </div>
 
+      {/* Overlay */}
       <AnimatePresence>
         {navbarOpen && (
-          <motion.div
-            ref={menuRef}
-            initial={{ x: "-100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "-100%" }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="md:hidden fixed top-[52px] left-0 w-3/4 h-full bg-gray-900 shadow-lg p-6 z-40"
-          >
-            <ul className="space-y-4">
-              {navLinks.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.path}
-                    onClick={(e) =>
-                      handleSmoothScroll(e, link.path, link.bgColor)
-                    }
-                    className={`block text-white text-lg py-2 px-4 rounded-lg transition-all duration-300 ease-in-out ${
-                      pathname === "/" && activeSection === link.path
-                        ? "bg-yellow-500 text-black font-bold"
-                        : "hover:bg-gray-700"
-                    }`}
-                  >
-                    {link.title}
-                  </a>
-                </li>
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.5 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="fixed inset-0 bg-black z-40"
+              onClick={() => setNavbarOpen(false)}
+            />
+            <motion.div
+              initial={{ x: "-100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "-100%" }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+              className="fixed top-13 left-0 bottom-0  w-64 bg-violet-950 p-6 flex flex-col space-y-4 z-50"
+            >
+              {navLinks.map((link, idx) => (
+                <Link
+                  key={idx}
+                  href={link.path}
+                  className={`text-white text-lg px-4 py-2 rounded transition-colors duration-300 ${
+                    isActive(link.path)
+                      ? "bg-yellow-400 text-black font-semibold"
+                      : "hover:bg-yellow-500"
+                  }`}
+                  onClick={() => setNavbarOpen(false)}
+                >
+                  {link.title}
+                </Link>
               ))}
-            </ul>
-          </motion.div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
-    </motion.nav>
+    </nav>
   );
 };
 

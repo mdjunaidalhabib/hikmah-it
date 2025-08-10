@@ -10,9 +10,9 @@ const services = [
   {
     id: 1,
     icon: <FaLaptopCode className="text-purple-600" />,
-    title: "Custom Web Design and Development",
+    title: "Custom Web Design",
     description:
-      "কাস্টমাইজড ওয়েবসাইট ডিজাইন, যা আপনার ব্যবসার জন্য সম্পূর্ণ উপযোগী ও আকর্ষণীয়।",
+      "কাস্টমাইজড ওয়েবসাইট ডিজাইন, যা ব্যবসার জন্য উপযোগী ও আকর্ষণীয়।",
     link: "/web-development",
   },
   {
@@ -39,7 +39,7 @@ export default function ServicesPage() {
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center -mt-4 mb-6">
           সেবা সমূহ
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {services.map(({ id, icon, title, description, link }) => (
             <Link href={link} key={id}>
               <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:scale-105 active:scale-105 active:bg-yellow-300">
