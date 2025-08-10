@@ -62,29 +62,16 @@ const Contact = () => {
 
   return (
     <section id="contact" className="bg-teal-50 dark:bg-gray-900">
-      <div className="px-4 md:px-10 py-10 max-w-7xl mx-auto">
-        <h2 className="text-center text-4xl font-bold text-gray-900 dark:text-white p-2">
+      <div className="px-4 md:px-10 py-10 max-w-7xl mx-auto ">
+        <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white p-2">
           যোগাযোগ করুন
         </h2>
-        <p className="text-gray-900 dark:text-white mb-4  mx-auto">
+        <p className="text-center text-gray-900 dark:text-white mb-4  mx-auto">
           আপনার কোনো প্রশ্ন, মতামত বা কাজের প্রস্তাব থাকলে নির্দ্বিধায় জানাতে
-          পারেন। আমি আপনার বার্তার অপেক্ষায় আছি — উত্তর দিতে সবসময় প্রস্তুত।
+          পারেন। আমরা আপনার বার্তার অপেক্ষায় আছি। উত্তর দিতে সবসময় প্রস্তুত।
         </p>
 
-        <div className="grid md:grid-cols-2 gap-4 relative mt-20">
-          <div className="z-10 text-center md:mr-10">
-            <h5 className="text-xl font-bold text-gray-900 dark:text-white my-2">
-              চলুন, কথা বলি
-            </h5>
-            <p className="text-gray-900 dark:text-white mb-4 max-w-md mx-auto">
-              আমাদের উদ্দেশ্য হলো আপনার সাথে সহজ ও দ্রুত যোগাযোগ নিশ্চিত করা,
-              যেন আপনি সর্বোচ্চ সেবা পেতে পারেন।
-            </p>
-            <div className="justify-self-center">
-              <SocialIcons />
-            </div>
-          </div>
-
+        <div className="grid md:grid-cols-2 gap-4 relative mt-10 md:mt-20">
           <div>
             <form className="flex flex-col" onSubmit={handleSubmit}>
               {emailSubmitted && (
@@ -130,7 +117,7 @@ const Contact = () => {
                   placeholder="আপনার মেসেজের বিষয়"
                 />
               </div>
-              <div className="mb-6">
+              <div className="mb-4">
                 <label
                   htmlFor="message"
                   className="text-gray-900 dark:text-white block text-sm mb-2 font-medium"
@@ -146,16 +133,30 @@ const Contact = () => {
                   placeholder="আপনার মেসেজ লিখুন..."
                 />
               </div>
-              <div>
+              <div className="w-full md:flex md:justify-center">
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="px-2 lg:px-3 inline-block py-2 w-full shadow-xl lg:m-3 sm:w-fit rounded-full bg-violet-700 hover:bg-fuchsia-600 text-white mt-3 text-center transition-all duration-300 ursor-pointer hover:scale-105 active:scale-105 active:bg-fuchsia-600"
+                  className="px-2 md:px-14 w-full md:w-fit inline-block py-2 shadow-md lg:m-3 rounded bg-violet-700 hover:bg-fuchsia-600 text-white text-center transition-all duration-300 cursor-pointer hover:scale-105 active:scale-105 active:bg-fuchsia-600"
                 >
                   {isSubmitting ? "পাঠানো হচ্ছে..." : "মেসেজ পাঠান"}
                 </button>
               </div>
             </form>
+          </div>
+          <div className="z-10 text-center mt-8 md:mr-10">
+            <h5 className="text-xl font-bold text-gray-900 dark:text-white my-2 p-1">
+              চলুন, যুক্ত হই
+            </h5>
+            <p className=" text-gray-900 dark:text-white mb-4 max-w-md mx-auto">
+              ফেসবুক, হোয়াটসঅ্যাপ, কিংবা ইউটিউব যে মাধ্যমেই চান, আমার সাথে
+              যুক্ত হতে পারেন। আপনার মতামত, প্রস্তাব বা সহযোগিতার সুযোগ নিয়ে
+              কথা বলতে আমি সবসময় প্রস্তুত।
+            </p>
+
+            <div className="justify-self-center">
+              <SocialIcons />
+            </div>
           </div>
         </div>
       </div>

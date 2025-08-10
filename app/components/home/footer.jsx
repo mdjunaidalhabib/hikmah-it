@@ -49,7 +49,7 @@ const ourServices = [
   {
     id: 1,
     icon: <FaLaptopCode className="text-indigo-600" />,
-    label: "কাস্টম ওয়েব ডিজাইন ও ডেভেলপমেন্ট",
+    label: "কাস্টম ওয়েব ডিজাইন",
     href: "/web-development",
   },
   {
@@ -70,13 +70,13 @@ const contactInfo = [
   {
     id: 1,
     icon: <FaPhoneAlt className="text-indigo-600" />,
-    label: "ফোন: ",
+    label: "",
     value: <a href="tel:01788563988">০১৭৮৮-৫৬৩৯৮৮</a>,
   },
   {
     id: 2,
     icon: <FaEnvelope className="text-pink-600" />,
-    label: "ইমেইল: ",
+    label: " ",
     value: (
       <a href="mailto:hikmahitcenter@gmail.com">hikmahitcenter@gmail.com</a>
     ),
@@ -84,8 +84,8 @@ const contactInfo = [
   {
     id: 3,
     icon: <FaMapMarkerAlt className="text-green-600" />,
-    label: "ঠিকানা: ",
-    value: "দেওয়ানগঞ্জ, জামালপুর, বাংলাদেশ",
+    label: " ",
+    value: "দেওয়ানগঞ্জ, জামালপুর।",
   },
 ];
 

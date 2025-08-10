@@ -18,7 +18,8 @@ export default function HeroSection() {
             সমাধান। যেটা শুধু কাজের না, আপনার বিশ্বাসেরও যোগ্য।
           </p>
           <Link href="/">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl text-lg transition-all duration-300 shadow-md ursor-pointer hover:scale-105 active:scale-105 active:bg-yellow-300">
+            <button 
+                  className="px-2 sm:px-14 w-full md:w-fit inline-block py-2 shadow-md lg:m-3 rounded bg-violet-700 hover:bg-fuchsia-600 text-white text-center transition-all duration-300 cursor-pointer hover:scale-105 active:scale-105 active:bg-fuchsia-600">
               এখনই যোগাযোগ করুন
             </button>
           </Link>
