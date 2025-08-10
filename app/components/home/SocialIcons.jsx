@@ -52,7 +52,7 @@ export default function SocialIcons() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={link.label}
-          className={`p-2 rounded-full border ${link.bg} hover:scale-110 active:scale-95 transition-transform duration-200 shadow-sm hover:shadow-md`}
+          className={`p-2 rounded-full border ${link.bg} hover:scale-110 sm:active:scale-95 transition-transform duration-300 shadow-sm hover:shadow-md active:scale-105 active:bg-green-200`}
         >
           {link.icon}
         </Link>

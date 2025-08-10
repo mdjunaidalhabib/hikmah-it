@@ -100,7 +100,7 @@ export default function Footer() {
             {ourServices.map(({ id, icon, label, href }) => (
               <li
                 key={id}
-                className="flex items-center gap-2 hover:scale-105 hover:text-yellow-300 transition-transform duration-200 cursor-pointer"
+                className="flex items-center gap-2 transition duration-300 cursor-pointer hover:scale-105 hover:text-yellow-300  active:scale-105 active:text-yellow-300"
               >
                 {icon}
                 <Link href={href}>{label}</Link>
@@ -116,7 +116,7 @@ export default function Footer() {
             {quickMenu.map(({ id, icon, label, href }) => (
               <li
                 key={id}
-                className="flex items-center gap-2 hover:scale-105 hover:text-yellow-300 transition-transform duration-200 cursor-pointer"
+                className="flex items-center gap-2 transition duration-300 cursor-pointer hover:scale-105 hover:text-yellow-300  active:scale-105 active:text-yellow-300"
               >
                 {icon}
                 <Link href={href}>{label}</Link>
@@ -132,7 +132,7 @@ export default function Footer() {
             {contactInfo.map(({ id, icon, label, value }) => (
               <li
                 key={id}
-                className="flex items-center gap-2 hover:scale-105 hover:text-yellow-300 transition-transform duration-200 cursor-pointer"
+                className="flex items-center gap-2 transition duration-300 cursor-pointer hover:scale-105 hover:text-yellow-300  active:scale-105 active:text-yellow-300"
               >
                 {icon}
                 <span>
@@ -148,7 +148,6 @@ export default function Footer() {
           <h2 className="text-xl font-semibold mb-4">সোশ্যাল মিডিয়া</h2>
           <SocialIcons />
         </div>
-
       </div>
 
       <hr className="border-t border-gray-600" />
