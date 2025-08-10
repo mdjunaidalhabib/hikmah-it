@@ -9,7 +9,7 @@ import {
 const services = [
   {
     id: 1,
-    icon: <FaLaptopCode className="text-indigo-600" />,
+    icon: <FaLaptopCode className="text-purple-600" />,
     title: "Custom Web Design and Development",
     description:
       "কাস্টমাইজড ওয়েবসাইট ডিজাইন, যা আপনার ব্যবসার জন্য সম্পূর্ণ উপযোগী ও আকর্ষণীয়।",
@@ -17,7 +17,7 @@ const services = [
   },
   {
     id: 2,
-    icon: <FaIdCard className="text-blue-600" />,
+    icon: <FaIdCard className="text-green-600" />,
     title: "ID Card Making",
     description:
       "মাদ্রাসা ও অন্যান্য প্রতিষ্ঠানের জন্য আইডি কার্ড ডিজাইন ও তৈরি।",

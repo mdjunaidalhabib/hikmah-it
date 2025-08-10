@@ -35,7 +35,7 @@ const socialLinks = [
   },
 
   {
-    href: "https://linkedin.com/in/yourprofile",
+    href: "/",
     icon: <FaLinkedin className="text-blue-700 w-5 h-5" />,
     label: "LinkedIn",
     bg: "bg-blue-50 border-blue-300",
