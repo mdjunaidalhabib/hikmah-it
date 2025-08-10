@@ -2,12 +2,6 @@
 import Link from "next/link";
 import {
   FaLaptopCode,
-  FaSchool,
-  FaShoppingCart,
-  FaUserCircle,
-  FaPaintBrush,
-  FaServer,
-  FaPalette,
   FaIdCard,
   FaVideo,
 } from "react-icons/fa";
@@ -23,30 +17,6 @@ const services = [
   },
   {
     id: 2,
-    icon: <FaSchool className="text-green-600" />,
-    title: "School Management System",
-    description:
-      "স্কুল ব্যবস্থাপনা সফটওয়্যার, যা ছাত্র, শিক্ষক, ক্লাস, অ্যাডমিশন সবকিছু সহজে নিয়ন্ত্রণ করে।",
-    link: "/school-management",
-  },
-  {
-    id: 3,
-    icon: <FaUserCircle className="text-yellow-500" />,
-    title: "Portfolio Website",
-    description:
-      "ব্যক্তিগত বা পেশাদারী কাজ প্রদর্শনের জন্য পোর্টফোলিও ওয়েবসাইট।",
-    link: "/portfolio",
-  },
-  {
-    id: 4,
-    icon: <FaPaintBrush className="text-rose-500" />,
-    title: "UI/UX Design",
-    description:
-      "ব্যবহারকারীর জন্য সহজ ও মনোগ্রাহী ইউজার ইন্টারফেস এবং অভিজ্ঞতা ডিজাইন।",
-    link: "/ui-ux",
-  },
-  {
-    id: 5,
     icon: <FaIdCard className="text-blue-600" />,
     title: "ID Card Making",
     description:
@@ -54,7 +24,7 @@ const services = [
     link: "/id-card",
   },
   {
-    id: 6,
+    id: 3,
     icon: <FaVideo className="text-red-500" />,
     title: "Video Editing",
     description: "ভিডিও এডিটিং সার্ভিস, যাতে তোমার কনটেন্ট আরো আকর্ষণীয় হয়।",

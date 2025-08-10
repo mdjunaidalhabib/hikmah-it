@@ -78,13 +78,13 @@ const HowItWorksBangla = () => {
             <div className="flex space-x-4">
               <Link
                 href="/start"
-                className="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600 transition"
+                className="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600 transition-all duration-300 shadow-md ursor-pointer hover:scale-105 active:scale-105 active:bg-yellow-300"
               >
                 শুরু করুন
               </Link>
               <Link
                 href="/details"
-                className="border border-orange-500 text-orange-500 px-6 py-2 rounded hover:bg-orange-100 transition"
+                className="border border-orange-500 text-orange-500 px-6 py-2 rounded hover:bg-orange-100 transition-all duration-300 shadow-md ursor-pointer hover:scale-105 active:scale-105 active:bg-yellow-300"
               >
                 বিস্তারিত দেখুন
               </Link>
