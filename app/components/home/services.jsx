@@ -31,14 +31,6 @@ const services = [
   },
   {
     id: 3,
-    icon: <FaShoppingCart className="text-pink-600" />,
-    title: "E-commerce Website",
-    description:
-      "অনলাইন শপিংয়ের জন্য আধুনিক ই-কমার্স ওয়েবসাইট ডিজাইন এবং ডেভেলপমেন্ট।",
-    link: "/ecommerce",
-  },
-  {
-    id: 4,
     icon: <FaUserCircle className="text-yellow-500" />,
     title: "Portfolio Website",
     description:
@@ -46,7 +38,7 @@ const services = [
     link: "/portfolio",
   },
   {
-    id: 5,
+    id: 4,
     icon: <FaPaintBrush className="text-rose-500" />,
     title: "UI/UX Design",
     description:
@@ -54,21 +46,7 @@ const services = [
     link: "/ui-ux",
   },
   {
-    id: 6,
-    icon: <FaServer className="text-gray-600" />,
-    title: "Domain and Hosting",
-    description: "ডোমেইন নিবন্ধন এবং দ্রুত, নিরাপদ হোস্টিং সার্ভিস প্রদান।",
-    link: "/domain-hosting",
-  },
-  {
-    id: 7,
-    icon: <FaPalette className="text-orange-500" />,
-    title: "Logo Design",
-    description: "তোমার ব্র্যান্ডের জন্য ইউনিক এবং প্রফেশনাল লোগো ডিজাইন।",
-    link: "logo-design",
-  },
-  {
-    id: 8,
+    id: 5,
     icon: <FaIdCard className="text-blue-600" />,
     title: "ID Card Making",
     description:
@@ -76,7 +54,7 @@ const services = [
     link: "/id-card",
   },
   {
-    id: 9,
+    id: 6,
     icon: <FaVideo className="text-red-500" />,
     title: "Video Editing",
     description: "ভিডিও এডিটিং সার্ভিস, যাতে তোমার কনটেন্ট আরো আকর্ষণীয় হয়।",
@@ -94,7 +72,7 @@ export default function ServicesPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {services.map(({ id, icon, title, description, link }) => (
             <Link href={link} key={id}>
-              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:scale-105">
+              <div className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:scale-105 active:scale-105 active:bg-yellow-300">
                 <div className="text-5xl mb-4 transition-transform duration-300 hover:scale-110">
                   {icon}
                 </div>

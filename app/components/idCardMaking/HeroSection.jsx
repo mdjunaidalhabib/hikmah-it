@@ -16,7 +16,7 @@ const HeroSection = () => {
           প্রতিষ্ঠান কিংবা স্কুলের জন্য একদম সঠিক পছন্দ।
         </p>
         {/* বোতাম */}
-        <div className="space-x-4">
+        <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-4 space-y-4 sm:space-y-0">
           <Link
             href="/start"
             className="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600 transition"

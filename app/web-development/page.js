@@ -8,9 +8,9 @@ export default function webDevelopment() {
   return (
     <div>
       <HeroSection />
+      <ServicesSection />
       <WhyChooseUs />
       <WorkProcess />
-      <ServicesSection />
     </div>
   );
 }
