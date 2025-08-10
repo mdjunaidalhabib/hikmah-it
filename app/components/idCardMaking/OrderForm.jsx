@@ -24,7 +24,9 @@ const OrderForm = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+    <div
+      className="bg-white dark:bg-gray-800 rounded-lg shadow p-6"
+    >
       <h2 className="text-2xl font-bold mb-6 text-center text-gray-800 dark:text-white">
         📝 আইডি কার্ড অর্ডার ফর্ম
       </h2>
@@ -53,18 +55,6 @@ const OrderForm = () => {
             onChange={handleChange}
             className="w-full p-3 rounded border dark:bg-gray-700 dark:border-gray-600"
             placeholder="01XXXXXXXXX"
-          />
-        </div>
-
-        <div>
-          <label className="block mb-1 font-medium">প্রতিষ্ঠানের নাম</label>
-          <input
-            type="text"
-            name="institute"
-            value={formData.institute}
-            onChange={handleChange}
-            className="w-full p-3 rounded border dark:bg-gray-700 dark:border-gray-600"
-            placeholder="স্কুল/মাদরাসা/অফিসের নাম"
           />
         </div>
 
@@ -119,7 +109,6 @@ const OrderForm = () => {
         </button>
       </form>
     </div>
-
   );
 };
 

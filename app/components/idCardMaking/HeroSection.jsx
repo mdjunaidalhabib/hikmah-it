@@ -18,10 +18,10 @@ const HeroSection = () => {
         {/* বোতাম */}
         <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-4 space-y-4 sm:space-y-0">
           <Link
-            href="/start"
+            href="#order-section"
             className="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600 transition-all duration-300 shadow-md ursor-pointer hover:scale-105 active:scale-105 active:bg-yellow-300"
           >
-            এখনই যোগাযোগ করুন
+            এখনই অর্ডার করুন
           </Link>
           <Link
             href="/designs"

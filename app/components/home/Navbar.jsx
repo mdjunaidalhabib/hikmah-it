@@ -41,10 +41,10 @@ const Navbar = () => {
             <Link
               key={idx}
               href={link.path}
-              className={`text-white font-semibold  hover:text-yellow-300 transition px-3 py-1 rounded ${
+              className={`text-white font-semibold hover:text-amber-400 transition-all duration-300 ease-in-out px-3 py-1 rounded-b-md ${
                 isActive(link.path)
-                  ? "bg-yellow-400 text-black font-semibold"
-                  : ""
+                  ? "border-b-4 border-amber-400 text-amber-400 font-semibold"
+                  : "border-b-4 border-transparent"
               }`}
               onClick={() => setNavbarOpen(false)}
             >

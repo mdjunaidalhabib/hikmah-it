@@ -50,7 +50,7 @@ const reasons = [
 const WhyChooseUs = () => {
   return (
     <section className="bg-teal-50 dark:bg-gray-900">
-      <div className="px-4 md:px-10 py-14 max-w-7xl mx-auto text-center">
+      <div className="px-4 md:px-10 pt-10 max-w-7xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-12">
           🤝 কেন হিকমাহ আইটি সেন্টার?
         </h2>

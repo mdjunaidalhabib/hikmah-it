@@ -1,10 +1,6 @@
 "use client";
 import Link from "next/link";
-import {
-  FaLaptopCode,
-  FaIdCard,
-  FaVideo,
-} from "react-icons/fa";
+import { FaLaptopCode, FaIdCard, FaVideo } from "react-icons/fa";
 
 const services = [
   {
@@ -37,7 +33,7 @@ export default function ServicesPage() {
     <section id="services" className="bg-teal-50 dark:bg-gray-900">
       <div className="px-4 md:px-10 py-10 max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-6">
-          সেবা সমূহ
+          আমাদের সেবা সমূহ
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {services.map(({ id, icon, title, description, link }) => (
