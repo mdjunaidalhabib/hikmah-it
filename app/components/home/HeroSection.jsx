@@ -17,7 +17,7 @@ export default function HeroSection() {
             আপনার প্রয়োজন বুঝে আমরা তৈরি করি সহজ, আধুনিক ও বিশ্বস্ত ডিজিটাল
             সমাধান। যেটা শুধু কাজের না, আপনার বিশ্বাসেরও যোগ্য।
           </p>
-          <Link href="/">
+          <Link href="/about">
             <button className="px-4 sm:px-14 inline-block py-2 shadow-md lg:m-3 rounded bg-violet-700 hover:bg-fuchsia-600 text-white text-center transition-all duration-300 cursor-pointer hover:scale-105 active:scale-105 active:bg-fuchsia-600">
               আমাদের সম্পর্কে জানুন
             </button>
