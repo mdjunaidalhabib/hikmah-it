@@ -4,8 +4,11 @@ import FAQSection from "./FAQSection";
 
 const CombinedSection = () => {
   return (
-    <section id="order-section" className="bg-teal-50 dark:bg-gray-900">
-      <div className="max-w-7xl mx-auto p-24">
+    <section
+      id="order-section"
+      className="bg-fuchsia-50 dark:bg-gray-900 pt-8"
+    >
+      <div className=" text-center px-4 md:px-10 py-10 max-w-7xl mx-auto">
         {/* হেডিং */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white p-2">
           🎫 আইডি কার্ড অর্ডার করুন এবং বিস্তারিত জানুন

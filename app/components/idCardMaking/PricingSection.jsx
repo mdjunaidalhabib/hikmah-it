@@ -8,6 +8,7 @@ import {
   FaPenNib,
   FaTags,
   FaHandshake,
+  FaMoneyBillWave,
 } from "react-icons/fa";
 
 const pricingTiers = [
@@ -67,9 +68,10 @@ const PricingSection = () => {
       <div className="px-4 md:px-8 py-10 max-w-7xl mx-auto">
         {/* Heading */}
         <div className="max-w-4xl mx-auto text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-            💳 মূল্য তালিকা (পরিমাণ অনুযায়ী)
-          </h2>
+            <FaMoneyBillWave className="text-green-500 text-5xl mx-auto mb-2" />
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+            মূল্য তালিকা
+            </h2>
           <p className="text-gray-600 dark:text-gray-300 mt-4">
             আপনি যত বেশি অর্ডার করবেন, প্রতি পিসের মূল্য তত কম হবে। নিচে আমাদের
             পরিমাণভিত্তিক রেট তালিকা দেওয়া হলো।

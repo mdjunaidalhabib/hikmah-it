@@ -4,3 +4,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+@layer base {
+  html {
+    font-family: serif, "Noto Sans Bengali", sans-serif;
+  }
+}

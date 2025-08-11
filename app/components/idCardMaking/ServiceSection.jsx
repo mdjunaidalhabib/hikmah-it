@@ -50,8 +50,8 @@ const ServiceSection = () => {
   return (
     <section className="bg-fuchsia-50 dark:bg-gray-900">
       <div className="px-4 md:px-10 py-14 max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-900 dark:text-white -mt-4 p-2">
-          আমাদের গুণগত মান ও সুবিধাসমূহ
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white -mt-4 p-2">
+        গুণগত মান ও সুবিধাসমূহ
         </h2>
         <p className="max-w-2xl mx-auto  mb-6 text-gray-600 dark:text-gray-300 pb-6">
           আইডি কার্ড তৈরির ক্ষেত্রে আমরা যেসব সুবিধা ও গুণগত মান নিশ্চিত করি তা
