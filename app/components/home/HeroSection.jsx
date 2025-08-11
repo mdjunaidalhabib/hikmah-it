@@ -9,7 +9,7 @@ export default function HeroSection() {
         {/* Left Content */}
         <div className="flex-1 text-center lg:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 ">
-            আপনার  স্বপ্নকে বাস্তবে রূপ দিন
+            আপনার ডিজিটাল স্বপ্নকে বাস্তবে রূপ দিন
             <span className="text-orange-600 font-serif"> Hikmah IT</span> -র
             সঙ্গে
           </h1>
