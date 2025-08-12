@@ -12,7 +12,7 @@ const HeroSection = () => {
           আধুনিক, রেসপন্সিভ, দ্রুত লোডিং এবং SEO ফ্রেন্ডলি ওয়েবসাইট ডিজাইন করে
           দিচ্ছি সম্পূর্ণ কাস্টমভাবে।
         </p>
-        <div className="flex flex-wrap gap-4 justify-center mb-8 text-sm md:text-base">
+        <div className="flex flex-wrap gap-4 justify-center mb-4 text-sm md:text-base">
           <span className="flex items-center gap-2 bg-white text-blue-800 px-4 py-2 rounded shadow">
             <FaCode /> কাস্টম ডিজাইন
           </span>
@@ -23,12 +23,6 @@ const HeroSection = () => {
             <FaGlobe /> ফাস্ট লোডিং ও SEO Ready
           </span>
         </div>
-        <a
-          href="#order-form"
-          className="bg-white text-blue-900 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-blue-100 transition"
-        >
-          ওয়েবসাইট বানাতে চাই
-        </a>
       </div>
     </section>
   );

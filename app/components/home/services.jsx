@@ -31,8 +31,8 @@ const services = [
 export default function ServicesPage() {
   return (
     <section id="services" className="bg-teal-50 dark:bg-gray-900">
-      <div className="px-4 md:px-10 py-10 max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-6">
+      <div className="px-4 md:px-10 pb-14 pt-8 max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
           আমাদের সেবা সমূহ
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
