@@ -23,7 +23,7 @@ const services = [
     id: 3,
     icon: <FaVideo className="text-red-500" />,
     title: "Video Editing",
-    description: "ভিডিও এডিটিং সার্ভিস, যাতে তোমার কনটেন্ট আরো আকর্ষণীয় হয়।",
+    description: "ভিডিও এডিটিং সার্ভিস, যাতে আপনার কনটেন্ট আরো আকর্ষণীয় হয়।",
     link: "/video-editing",
   },
 ];

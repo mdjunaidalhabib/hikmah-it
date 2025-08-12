@@ -27,13 +27,16 @@ export default function DesignsPage() {
   const hasMore = filtered.length > visibleCount;
 
   return (
-    <div className="p-4 max-w-6xl mx-auto mt-20">
-      <h1 className="text-2xl font-bold mb-4">ID Card Designs</h1>
-      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      <CategoryFilter
-        selected={selectedCategory}
-        setSelected={setSelectedCategory}
-      />
+    <div className="p-4 max-w-6xl mx-auto mt-14">
+      <div className="sticky top-13 bg-white z-10 py-1 px-4 ">
+        <h1 className="text-2xl font-bold mb-4 sticky">ID Card Designs</h1>
+        <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+        <CategoryFilter
+          selected={selectedCategory}
+          setSelected={setSelectedCategory}
+        />
+      </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {visibleDesigns.map((design) => (
           <DesignCard
