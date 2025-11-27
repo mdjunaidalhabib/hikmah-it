@@ -1,57 +1,192 @@
 "use client";
 
 import React from "react";
-import { FaMobileAlt, FaLock, FaRocket, FaShoppingCart } from "react-icons/fa";
+import { motion } from "framer-motion";
+import {
+  FaShoppingCart,
+  FaDollarSign,
+  FaTruck,
+  FaTags,
+  FaWarehouse,
+  FaCogs,
+  FaCheckCircle,
+} from "react-icons/fa";
 
-const features = [
+const categories = [
   {
-    icon: <FaMobileAlt className="text-purple-600" />,
-    title: "মোবাইল রেসপনসিভ",
-    description: "সকল ডিভাইসে সঠিকভাবে কাজ করে এমন রেসপনসিভ ডিজাইন।",
+    title: "মূল ই-কমার্স ফিচারসমূহ",
+    icon: <FaShoppingCart className="text-3xl text-purple-600" />,
+    items: [
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "ইউজার রেজিস্ট্রেশন ও লগইন",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "নিরাপদ চেকআউট সিস্টেম",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "উন্নত সার্চ সিস্টেম",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "স্মার্ট কার্ট সিস্টেম",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "ইচ্ছেমতো উইশলিস্ট",
+      },
+    ],
   },
   {
-    icon: <FaRocket className="text-rose-500" />,
-    title: "দ্রুত লোডিং স্পিড",
-    description: "উচ্চগতির ও অপ্টিমাইজড ওয়েব পেজ লোডিং সিস্টেম।",
+    title: "প্রোডাক্ট ম্যানেজমেন্ট",
+    icon: <FaTags className="text-3xl text-green-600" />,
+    items: [
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "অসীম প্রোডাক্ট আপলোড",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "বাল্ক আপলোড (CSV/Excel)",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "SKU ও Barcode ম্যানেজমেন্ট",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "মাল্টি-ইমেজ সাপোর্ট",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "রেটিং ও রিভিউ সিস্টেম",
+      },
+    ],
   },
   {
-    icon: <FaShoppingCart className="text-green-600" />,
-    title: "ডাইনামিক প্রোডাক্ট ম্যানেজমেন্ট",
-    description: "সহজেই প্রোডাক্ট যোগ, সম্পাদনা ও মুছে ফেলার সুবিধা।",
+    title: "অর্ডার ম্যানেজমেন্ট",
+    icon: <FaCogs className="text-3xl text-blue-600" />,
+    items: [
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "অর্ডার ট্র্যাকিং",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "স্ট্যাটাস আপডেট সিস্টেম",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "ক্যানসেল / রিটার্ন / রিফান্ড",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "ইনভয়েস ডাউনলোড (PDF)",
+      },
+    ],
   },
   {
-    icon: <FaLock className="text-blue-600" />,
-    title: "নিরাপদ পেমেন্ট গেটওয়ে",
-    description: "SSL সিকিউরড নিরাপদ পেমেন্ট ব্যবস্থা সংযুক্ত।",
+    title: "পেমেন্ট সিস্টেম",
+    icon: <FaDollarSign className="text-3xl text-yellow-600" />,
+    items: [
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "ক্যাশ অন ডেলিভারি (COD)",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "অনলাইন পেমেন্ট গেটওয়ে",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "ম্যানুয়াল পেমেন্ট",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "পেমেন্ট ভেরিফিকেশন",
+      },
+    ],
+  },
+  {
+    title: "শিপিং ও ডেলিভারি",
+    icon: <FaTruck className="text-3xl text-red-600" />,
+    items: [
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "কুরিয়ার ইন্টিগ্রেশন",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "ডাইনামিক শিপিং চার্জ",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "ডেলিভারি এরিয়া কন্ট্রোল",
+      },
+    ],
+  },
+  {
+    title: "ইনভেন্টরি ম্যানেজমেন্ট",
+    icon: <FaWarehouse className="text-3xl text-indigo-600" />,
+    items: [
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "রিয়েল-টাইম স্টক আপডেট",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "লো স্টক ওয়ার্নিং",
+      },
+      {
+        icon: <FaCheckCircle className="text-green-500 mt-1" />,
+        text: "অটো স্টক রিডিউস",
+      },
+    ],
   },
 ];
 
-const Features = () => {
+const EcommerceFeatures = () => {
   return (
-    <section className="bg-gray-100 dark:bg-gray-800 py-14 px-4">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-          আমাদের ফিচারসমূহ
+    <section className="py-16 relative z-10 bg-gradient-to-r from-purple-200 to-pink-200 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
+      {/* ✅ Background Animation (সবচেয়ে নিচে থাকবে) */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <div className="w-96 h-96 bg-pink-300 rounded-full opacity-20 absolute -bottom-32 -right-32 animate-pulse -z-10"></div>
+      </div>
+
+      {/* ✅ Content */}
+      <div className="max-w-7xl mx-auto px-4 relative z-10">
+        <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-16">
+          ই-কমার্স ওয়েবসাইট ফিচারসমূহ
         </h2>
-        <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-300 mb-8">
-          আমাদের ওয়েবসাইট সার্ভিসে যা যা পাচ্ছেন তা নিচে দেখুন।
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {features.map(({ icon, title, description }, idx) => (
-            <div
-              key={idx}
-              className="flex flex-col items-center p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300 hover:scale-105 cursor-pointer"
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {categories.map((cat, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: i * 0.1 }}
+              viewport={{ once: true }}
+              className="p-6 bg-purple-50 dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:scale-[1.02]"
             >
-              <div className="text-4xl mb-3 transition-transform duration-300 hover:scale-110">
-                {icon}
+              <div className="flex items-center gap-4 mb-6 transition-transform duration-300 hover:scale-[1.02]">
+                {cat.icon}
+                <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
+                  {cat.title}
+                </h3>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
-                {title}
-              </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300 text-center">
-                {description}
-              </p>
-            </div>
+
+              <ul className="grid grid-cols-1 gap-3 text-gray-700 dark:text-gray-300">
+                {cat.items.map((item, idx) => (
+                  <li key={idx} className="flex items-start gap-3">
+                    {item.icon}
+                    <span>{item.text}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -59,4 +194,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default EcommerceFeatures;

@@ -20,7 +20,7 @@ const Navbar = () => {
   const toggleNavbar = () => setNavbarOpen(!navbarOpen);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-violet-600 z-50 shadow-md">
+    <nav className="fixed top-0 left-0 right-0 bg-purple-600 z-50 shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-2">
         {/* Logo and Title */}
         <Link

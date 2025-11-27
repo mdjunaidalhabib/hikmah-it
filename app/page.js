@@ -3,6 +3,8 @@ import Services from "./components/home/services";
 import HowItWorksBangla from "./components/home/HowItWorksBangla";
 import CustomerReviewSlider from "./components/home/CustomerReviewSlider";
 import Contact from "./components/home/Contact";
+import FloatingActionButton from "./components/home/FloatingActionButton";
+
 
 export default function Home() {
   return (
@@ -12,6 +14,7 @@ export default function Home() {
       <HowItWorksBangla />
       <CustomerReviewSlider />
       <Contact />
+      <FloatingActionButton />
     </div>
   );
 }

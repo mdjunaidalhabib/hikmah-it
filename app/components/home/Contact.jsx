@@ -137,7 +137,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="px-2 md:px-14 w-full md:w-fit inline-block py-2 shadow-md lg:m-3 rounded bg-violet-700 hover:bg-fuchsia-600 text-white text-center transition-all duration-300 cursor-pointer hover:scale-105 active:scale-105 active:bg-fuchsia-600"
+                  className="px-2 md:px-14 w-full md:w-fit inline-block py-2 shadow-md lg:m-3 rounded bg-purple-600 hover:bg-fuchsia-600 text-white text-center transition-all duration-300 cursor-pointer hover:scale-105 active:scale-105 active:bg-fuchsia-600"
                 >
                   {isSubmitting ? "পাঠানো হচ্ছে..." : "মেসেজ পাঠান"}
                 </button>

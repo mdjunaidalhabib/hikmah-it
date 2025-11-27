@@ -16,5 +16,4 @@ const ecommerce = () => {
     </div>
   );
 };
-
 export default ecommerce;

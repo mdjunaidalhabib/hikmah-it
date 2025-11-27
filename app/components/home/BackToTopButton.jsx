@@ -28,7 +28,7 @@ export default function BackToTopButton() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: "-100vh", scale: 0.5 }}
           transition={{ duration: 0.6, ease: "easeInOut", delay: 0.1 }}
-          className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50"
+          className="fixed bottom-4 right-4 md:bottom-4 md:right-6 z-50"
         >
           <motion.button
             whileHover={{
@@ -38,7 +38,7 @@ export default function BackToTopButton() {
             whileTap={{ scale: 0.95 }}
             onClick={scrollToTop}
             title="Back to Top"
-            className="w-8 h-8 md:w-14 md:h-14 flex items-center justify-center rounded-bl-lg rounded-tr-lg border border-white/20 shadow-md text-white bg-blue-600 transition-all duration-300"
+            className="w-8 h-8 md:w-12 md:h-12 flex items-center justify-center rounded-bl-lg rounded-tr-lg border border-white/20 shadow-md text-white bg-blue-600 transition-all duration-300"
           >
             <FaArrowUp className="text-lg md:text-xl" />
           </motion.button>
