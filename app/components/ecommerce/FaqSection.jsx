@@ -96,7 +96,7 @@ const faqs = [
   {
     question: "রিনিউ ফি কত? নতুন করে বেশি টাকা লাগবে কি?",
     answer:
-      "না। স্ক্রিনশটের মতোই সব প্যাকেজে Renewal same price—মানে রিনিউ চার্জ আগের দামের সমান থাকবে।",
+      "না। সব প্যাকেজে Renewal same price—মানে রিনিউ চার্জ আগের দামের সমান থাকবে।",
     icon: <FaRedoAlt />,
     iconClass: "text-teal-700 dark:text-teal-300",
     iconBgClass: "bg-teal-100 dark:bg-teal-900/40",

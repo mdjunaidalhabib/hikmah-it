@@ -45,7 +45,7 @@ const FloatingActionButton = () => {
 
         {/* Messenger আইকন */}
         <a
-          href="https://www.facebook.com/habibsfashion"
+          href="https://www.facebook.com/hikmahitpage"
           target="_blank"
           rel="noopener noreferrer"
           className={`bg-[#0084FF] text-white p-3 rounded-full shadow-lg hover:scale-110 transition-transform ${
