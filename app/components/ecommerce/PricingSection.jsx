@@ -123,7 +123,7 @@ const plans = [
     key: "basic",
     title: "Basic",
     subtitle: "For starters",
-    price: "৳৯৯৯৯",
+    price: "৳১৪০০",
     renew: "Renewal same price",
     members: "২ জন",
     orders: "৫০০ অর্ডার/মাস",
