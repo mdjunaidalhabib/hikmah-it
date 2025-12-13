@@ -5,7 +5,7 @@ import CustomerReviewSlider from "../components/home/CustomerReviewSlider";
 
 const portfolio = () => {
   return (
-    <div className="mt-14">
+    <div className="mt-12">
       <Contact />
       <CustomerReviewSlider />
     </div>

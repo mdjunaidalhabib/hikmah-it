@@ -152,7 +152,7 @@ const EcommerceFeatures = () => {
     <section className="py-16 relative z-10 bg-gradient-to-r from-purple-200 to-pink-200 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
       {/* ✅ Background Animation (সবচেয়ে নিচে থাকবে) */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="w-96 h-96 bg-pink-300 rounded-full opacity-20 absolute -bottom-32 -right-32 animate-pulse -z-10"></div>
+        <div className="w-96 h-96 bg-pink-300 dark:bg-gray-600 rounded-full opacity-20 absolute -bottom-32 -right-32 animate-pulse -z-10"></div>
       </div>
 
       {/* ✅ Content */}

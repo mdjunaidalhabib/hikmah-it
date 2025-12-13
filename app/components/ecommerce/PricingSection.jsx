@@ -125,7 +125,6 @@ const plans = [
     subtitle: "For starters",
     price: "৳১৪০০",
     renew: "Renewal same price",
-    members: "২ জন",
     orders: "৫০০ অর্ডার/মাস",
     included: [...commonFeatures.map((f) => f.key)],
   },
@@ -133,10 +132,9 @@ const plans = [
     key: "regular",
     title: "Regular",
     subtitle: "Most popular",
-    price: "৳১৯৯৯৯",
+    price: "৳১৯০০০",
     renew: "Renewal same price",
     popular: true,
-    members: "৫ জন",
     orders: "১৫০০ অর্ডার/মাস",
     included: [
       ...commonFeatures.map((f) => f.key),
@@ -151,7 +149,6 @@ const plans = [
     subtitle: "For professionals",
     price: "৳৩৯৯৯৯",
     renew: "Renewal same price",
-    members: "১০ জন",
     orders: "৩০০০ অর্ডার/মাস",
     included: [
       ...commonFeatures.map((f) => f.key),
@@ -216,7 +213,6 @@ export default function PricingTable() {
               </p>
 
               <div className="mt-3 text-sm text-gray-600 space-y-1 dark:text-slate-300">
-                <p>🔹 {p.members}</p>
                 <p>🔹 {p.orders}</p>
               </div>
             </div>
@@ -256,7 +252,6 @@ export default function PricingTable() {
               </div>
 
               <div className="mt-3 text-xs text-gray-600 dark:text-slate-300 space-y-1">
-                <p>🔹 {p.members}</p>
                 <p>🔹 {p.orders}</p>
               </div>
 

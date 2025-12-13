@@ -2,7 +2,7 @@ import React from "react";
 
 const CameServices = () => {
   return (
-    <section className="bg-teal-50 dark:bg-gray-900">
+    <section className="relative py-10 px-4 bg-fuchsia-100 dark:bg-slate-950 overflow-hidden">
       <div className="px-4 md:px-10 py-10 max-w-7xl mx-auto text-center">
         <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
           শীঘ্রই আসছে

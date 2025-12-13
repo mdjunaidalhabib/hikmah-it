@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <section className="relative bg-gradient-to-r from-purple-200 to-pink-200 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
-      <div className="absolute inset-0 -z-10 pointer-events-none">
+      <div className="absolute inset-0 -z-0 pointer-events-none">
         {/* subtle decorative shapes (background only) */}
-        <div className="w-72 h-72 bg-purple-300 rounded-full opacity-20 absolute -top-20 -left-20 animate-pulse"></div>
+        <div className="w-70 h-70 bg-purple-300 dark:bg-gray-600 rounded-full opacity-20 absolute -top-20 -left-20 animate-pulse"></div>
       </div>
 
       <div className="relative text-center px-4 md:px-10 py-24 max-w-7xl mx-auto z-10">

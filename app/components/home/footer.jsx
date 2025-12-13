@@ -71,7 +71,7 @@ const contactInfo = [
     id: 1,
     icon: <FaPhoneAlt className="text-indigo-600" />,
     label: "",
-    value: <a href="tel:01788563988">০১৭৮৮-৫৬৩৯৮৮</a>,
+    value: <a href="tel:01624114405">০১৬২৪-১১৪৪০৫</a>,
   },
   {
     id: 2,

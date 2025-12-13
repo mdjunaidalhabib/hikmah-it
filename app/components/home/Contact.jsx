@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import SocialIcons from "./SocialIcons";
 
 const Contact = () => {
@@ -40,9 +41,7 @@ const Contact = () => {
         body: JSON.stringify(data),
       });
 
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
+      if (!response.ok) throw new Error("Network response was not ok");
 
       await response.json();
       setEmailSubmitted(true);
@@ -61,21 +60,45 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-teal-50 dark:bg-gray-900">
-      <div className="px-4 md:px-10 py-10 max-w-7xl mx-auto ">
-        <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white p-2">
+    <section className="relative pb-10 px-4 bg-fuchsia-100 dark:bg-slate-950 text-center overflow-hidden">
+      {/* Background Shape */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <div className="w-72 h-72 bg-purple-300 rounded-full opacity-20 absolute -top-24 -right-24 animate-pulse"></div>
+      </div>
+
+      <div className="px-4 md:px-10 py-10 max-w-7xl mx-auto relative z-10">
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-3xl font-bold text-center text-gray-900 dark:text-white p-2"
+        >
           যোগাযোগ করুন
-        </h2>
-        <p className="text-center text-gray-900 dark:text-white mb-4  mx-auto">
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="text-center text-gray-900 dark:text-white mb-4 mx-auto max-w-3xl"
+        >
           আপনার কোনো প্রশ্ন, মতামত বা কাজের প্রস্তাব থাকলে নির্দ্বিধায় জানাতে
           পারেন। আমরা আপনার বার্তার অপেক্ষায় আছি। উত্তর দিতে সবসময় প্রস্তুত।
-        </p>
+        </motion.p>
 
         <div className="grid md:grid-cols-2 gap-4 relative mt-10 md:mt-20">
-          <div>
+          {/* Form */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             <form className="flex flex-col" onSubmit={handleSubmit}>
               {emailSubmitted && (
-                <div className="text-green-500 text-lg font-semibold mb-4 animate-fade-in">
+                <div className="text-green-500 text-lg font-semibold mb-4">
                   ✅ মেসেজ সফলভাবে পাঠানো হয়েছে!
                 </div>
               )}
@@ -84,80 +107,81 @@ const Contact = () => {
               )}
 
               <div className="mb-6">
-                <label
-                  htmlFor="email"
-                  className="text-gray-900 dark:text-white block mb-2 text-sm font-medium"
-                  aria-label="Your email"
-                >
+                <label className="text-gray-900 dark:text-white block mb-2 text-sm font-medium">
                   আপনার ইমেইল
                 </label>
                 <input
                   name="email"
                   type="email"
-                  id="email"
                   required
-                  className="  bg-white dark:bg-gray-800 border border-violet-600 placeholder-[#9CA2A9] text-gray-900 dark:text-white text-sm rounded-lg block w-full p-2.5"
+                  className="bg-white dark:bg-gray-800 border border-violet-600 text-gray-900 dark:text-white text-sm rounded-lg block w-full p-2.5"
                   placeholder="example@domain.com"
                 />
               </div>
+
               <div className="mb-6">
-                <label
-                  htmlFor="subject"
-                  className="text-gray-900 dark:text-white block text-sm mb-2 font-medium"
-                  aria-label="Subject"
-                >
+                <label className="text-gray-900 dark:text-white block text-sm mb-2 font-medium">
                   বিষয়
                 </label>
                 <input
                   name="subject"
                   type="text"
-                  id="subject"
                   required
-                  className="  bg-white dark:bg-gray-800 border border-violet-600 placeholder-[#9CA2A9] text-gray-900 dark:text-white text-sm rounded-lg block w-full p-2.5"
+                  className="bg-white dark:bg-gray-800 border border-violet-600 text-gray-900 dark:text-white text-sm rounded-lg block w-full p-2.5"
                   placeholder="আপনার মেসেজের বিষয়"
                 />
               </div>
+
               <div className="mb-4">
-                <label
-                  htmlFor="message"
-                  className="text-gray-900 dark:text-white block text-sm mb-2 font-medium"
-                  aria-label="Message"
-                >
+                <label className="text-gray-900 dark:text-white block text-sm mb-2 font-medium">
                   মেসেজ
                 </label>
                 <textarea
                   name="message"
-                  id="message"
                   required
-                  className="  bg-white dark:bg-gray-800 border border-violet-600 placeholder-[#9CA2A9] text-gray-900 dark:text-white text-sm rounded-lg block w-full p-2.5"
+                  className="bg-white dark:bg-gray-800 border border-violet-600 text-gray-900 dark:text-white text-sm rounded-lg block w-full p-2.5"
                   placeholder="আপনার মেসেজ লিখুন..."
                 />
               </div>
-              <div className="w-full md:flex md:justify-center">
+
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="w-full md:flex md:justify-center"
+              >
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="px-2 md:px-14 w-full md:w-fit inline-block py-2 shadow-md lg:m-3 rounded bg-purple-600 hover:bg-fuchsia-600 text-white text-center transition-all duration-300 cursor-pointer hover:scale-105 active:scale-105 active:bg-fuchsia-600"
+                  className="px-2 md:px-14 w-full md:w-fit py-2 shadow-md lg:m-3 rounded bg-purple-600 hover:bg-fuchsia-600 text-white transition-all duration-300 hover:scale-105"
                 >
                   {isSubmitting ? "পাঠানো হচ্ছে..." : "মেসেজ পাঠান"}
                 </button>
-              </div>
+              </motion.div>
             </form>
-          </div>
-          <div className="z-10 text-center mt-8 md:mr-10">
+          </motion.div>
+
+          {/* Social */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="z-10 text-center mt-8 md:mr-10"
+          >
             <h5 className="text-xl font-bold text-gray-900 dark:text-white my-2 p-1">
               চলুন, যুক্ত হই
             </h5>
-            <p className=" text-gray-900 dark:text-white mb-4 max-w-md mx-auto">
+            <p className="text-gray-900 dark:text-white mb-4 max-w-md mx-auto">
               ফেসবুক, হোয়াটসঅ্যাপ, কিংবা ইউটিউব যে মাধ্যমেই চান, আমার সাথে
               যুক্ত হতে পারেন। আপনার মতামত, প্রস্তাব বা সহযোগিতার সুযোগ নিয়ে
               কথা বলতে আমি সবসময় প্রস্তুত।
             </p>
-
             <div className="justify-self-center">
               <SocialIcons />
-            </div>
-          </div>
+            </div>{" "}
+          </motion.div>
         </div>
       </div>
     </section>

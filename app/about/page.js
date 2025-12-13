@@ -10,7 +10,7 @@ import Contact from "../components/home/Contact";
 
 export default function Home() {
   return (
-    <div className="mt-14">
+    <div className="mt-12">
       <About />
       <Services />
       <CameServices />
